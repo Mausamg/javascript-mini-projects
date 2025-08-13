@@ -1,0 +1,217 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    border: none;
+    border-radius:18px ;
+    width: 220px;
+    height: 220px;
+    align-items: center;
+    text-align: center;
+    padding-top: 34px;
+    margin: 10px;
+    background-color:beige;
+    font-size: 130px;
+    color: brown;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 10px 9px 17px rgba(0, 0, 0, 0.5);
+}
+body{
+    background-color: rgb(186, 182, 239);
+}
+.parent{
+}
+.main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    height: 70vh;
+    height: 1000px;
+}
+.container:hover{
+    cursor: pointer;
+    background-color: white;
+}
+button{
+    margin-top: 60px;
+    width: 320px;
+    font-size: 50px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button:hover{
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+#button{
+    margin-top: 10px;
+    text-align: center;
+
+}
+#heading h1{
+    text-align: center;
+    margin-top: 200px;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(171, 63, 63, 0.5);
+    font-size: 150px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mssg-container{
+    text-align: center;
+    margin-top: 50px;
+}
+div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 180px;
+    text-shadow: 2px 2px 4px rgba(29, 19, 19, 0.5);
+    color: rgb(146, 25, 25);
+}
+#h-button{
+    margin-top: 60px;
+    width: 320px;
+    font-size: 50px;
+    height: 100px;
+    background-color: rgb(96, 135, 39);
+    color:white;
+}
+#h-button:hover{
+    background-color: rgb(75, 109, 23);
+}
+.hide{
+    display: none;
+} */
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:black;
+}
+
+h1 {
+    text-align: center;
+    color: #5c5959;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Tic Tac Toe Grid */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.parent {
+    display: flex;
+    margin: 1.5px;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+/* Hover effect for boxes */
+.container:hover {
+    background-color: #e7e0e0;
+}
+
+/* Winning message container */
+.mssg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+.hide {
+    display: none;
+}
+
+#mssg-container p {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+#h-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#h-button:hover {
+    background-color: #45a049;
+}
+
+/* Reset Button */
+#button {
+    margin-top: 20px;
+}
+
+#button button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#button button:hover {
+    background-color: #0b7dda;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
